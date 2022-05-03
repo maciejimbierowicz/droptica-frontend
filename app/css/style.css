@@ -1,0 +1,504 @@
+body {
+    color: rgb(63, 122, 170);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+h2 {
+    font-family: serif;
+    font-weight: bold;
+    margin-top: 0;
+    color: white
+}
+
+
+span {
+    display: inline-block;
+    padding-top: 10px
+  }
+
+li a {
+    color: white;
+    padding: 80px 25px;
+    text-decoration: none;
+  }
+
+  
+
+/* ---------------------------------------HEADER SECTION-----------------------------------  */
+
+
+.contact-info {
+    padding: 0 18px 0 25px;
+    display: inline-block;
+    text-align: left;
+    font-size: 12px;
+    line-height: 0.5
+}
+
+.contact-info p {
+    padding-left: 5px;
+    float: right;
+    font-size: 15px
+}
+
+
+.contact-img {
+    padding-top: 12px;
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
+.header {
+    padding: 20px 10px 18px 10px;
+    text-align: center;
+}
+
+.social-img {
+    display: inline-block;
+    padding-left: 100px
+}
+
+.social-img img {
+    height: 30px;
+    padding-bottom: 10px
+}
+
+
+.mobile-header {
+    display: none
+}
+
+#logo {
+    height: 50px;
+    margin-right: 20px
+}
+
+
+
+/* ---------------------------------NAVBAR------------------------------------------ */
+
+
+.navbar {
+    position: relative;
+    background-color: #f28b20;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center
+}
+
+.navbar-elements {
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 240px
+  }
+
+.mobile-navbar {
+    display: none
+}
+
+#input-image {
+    position: absolute;
+    right: 22%;
+    bottom: 3px;
+}
+
+#search-bar {
+    display: none;
+    background-color: #cc6601;
+    height: 43px;
+    position: relative
+}
+
+
+#search-button {
+    position: absolute;
+    right: 22%;
+    bottom: 3px;
+}
+
+#search-input {
+    background-color: #cc6601;
+    border: none;
+    height: 20px;
+    width: 500px;
+    position: absolute;
+    left: 22%;
+    bottom: 10px;
+    outline: none
+}
+
+::placeholder {
+    color:    white;
+ }
+
+/* NAVBAR DROPDOWN */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+}
+
+.dropdown .dropbtn { 
+    font-weight: bold;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+} 
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    position: relative;
+    background-color: #51758d;
+    transition: 0.5s ease-out;
+    top: -50%;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #2b475c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 1s ease-out;
+    z-index: 2
+} 
+
+.mobile-dropdown {
+    display: none;
+    width: 0
+}
+
+
+/* ----------------------MAIN SECTION--------------------------------------*/
+
+.box {
+    background-color: white;
+    opacity: 0.7;
+    padding: 10px 5px 10px 5px;;
+}
+
+.main-section {
+    position: relative;
+    background-image: url(../../images_content/slider1.png);
+    transition: 1s ease-out;
+    height: 300px;
+    background-size: cover;
+    padding: 5% 45% 0 23%;
+    line-height: 1.5;
+    background-position: center
+}
+
+.main-section p {
+    color: black;
+    margin: auto auto;
+}
+
+.next-button {
+    position: absolute;
+    right: 15px;
+    top: 160px;
+    transform: rotate(180deg);
+    height: 30px
+}
+
+.previous-button {
+    position: absolute;
+    left: 15px;
+    top: 160px;
+    height: 30px;
+}
+
+
+#findout-button {
+    background-color: #55bca0;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+/* ----------------------HELP SECTION--------------------------------------*/
+
+.help-section h3 {
+    text-align: center
+}
+
+
+.help-section {
+    padding-top: 20px
+}
+
+.work-images {
+    display: flex;
+    justify-content: center;
+}
+
+.work-box {
+    font-size: 10px;
+    text-align: center;
+    padding: 20px 30px
+}
+
+.work-image {
+    height: 60px
+}
+
+.work-arrow {
+    height: 17px;
+    position: relative; 
+    left: 55px; 
+    bottom: 25px
+}
+
+
+
+/* ----------------- MEDIUM SCREEN------------------------ */
+
+@media screen and (max-width: 890px) {
+    
+    .box {
+        margin: 5% 50% 0 0;
+     }
+
+    .header{
+        text-align: left
+    }
+    
+    .main-section {
+        padding: 5% 0% 0 10%;
+     }
+
+    .mobile-dropdown {
+        display: none;
+    }
+    
+    .navbar-elements {
+        justify-content: left;
+        padding-left: 0;
+        padding-right: 3%
+          
+      }
+
+    .social-img {
+         display: block;
+         text-align: right
+     }
+      
+    .work-images {
+         flex-direction: column-reverse
+     }
+
+    
+    #input-image {
+        position: absolute;
+        right: 5%;
+        bottom: 3px;  
+    }
+
+    #logo {
+         height:auto
+     }
+    
+    #search-button {
+        position: absolute;
+        right: 5%;
+        bottom: 3px;
+    }
+
+    #search-input {
+        left: 3%
+    }
+
+  }
+
+
+
+
+/* ----------------- SMALL SCREEN------------------------ */
+
+@media screen and (max-width: 630px) {
+    
+    h2 {
+        padding-bottom: 50px;
+        font-size: 1.8rem
+    }
+
+    .about-section {
+        transition: 0.3s ease-out;
+        height: 0;
+        overflow: hidden;
+        background-color: #2b475c; 
+        line-height: 2
+    }
+
+    .box {
+        margin-right: 0;
+        text-align: center
+    }
+
+    .contact-img {
+        height: 30px;
+        width: 30px;
+        padding-right: 10px
+    }
+
+    .default-header {
+        display: none
+    }
+
+    .hamburger-dropdown {
+        position: absolute;
+        right:0;
+        top: 5px;
+        font-size: 30px;
+    }
+
+
+    .main-section {
+        text-align: center;
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        flex-direction: column;
+        height: 500px
+    }
+
+    .mobile-dropdown {
+        height: 100%;
+        width: 0;
+        overflow: hidden;
+        background-color: #51758d;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        text-align: left;
+        justify-content: right;
+        align-items: right;
+        flex-direction: column;
+        z-index: 3;
+        transition: 0.3s ease-in;
+    }
+
+    .mobile-dropdown a {
+        margin-left: 20px;
+        font-size: 18px;
+        color: white;
+        text-decoration: none
+    }
+
+    .mobile-header {
+        display: flex;
+        justify-content: right;
+        position: relative;
+        padding: 10px 0
+
+    }
+
+    .mobile-navbar {
+        position: relative;
+        list-style-type: none;
+        margin: 0;
+        padding: 7px 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        }
+    
+    .mobile-navigation {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .navbar-elements {
+        display: none
+    }
+
+    .next-button {
+        position: static;
+        height: 50px;
+        width: 30px;
+        padding-bottom: 22px;
+        padding-right: 20px
+    }
+
+    .previous-button {
+        position: static;
+        height: 50px;
+        width: 30px;
+        padding-top: 22px;
+        padding-right: 20px
+    }
+
+
+    #about-button {
+        all: unset;
+        position: relative;
+        right: 0
+    }
+
+    #findout-button {
+        height: 100%;
+        width: 45%;
+    }
+
+    #ham-button {
+        font-size: 30px;
+        color: white; 
+        background-color: #f28b20;
+        border: none
+    }
+
+    #mobile-logo {
+        position: absolute;
+        top: 25%;
+        left: 2%
+    }
+
+    #mobile-search-button {
+        position: absolute;
+        right: 60px;
+        top: 9px
+    }
+
+    #search-button {
+        position: static
+    }
+
+
+}

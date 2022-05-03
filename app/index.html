@@ -8,12 +8,127 @@
   <head>
     <meta charset="utf-8" />
     <title>Droptica Test</title>
-    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
     <style>@import url("./css/style.css");</style>
   </head>
   <body>
+    
+    <section class="header">
+      <div class="default-header">
+      <picture>
+        <source media="(max-width: 840px)" srcset="../images_content/logo_small.png">
+        <img src="../images_content/logo_small.png" id="logo">
+      </picture>
+        <div class="contact-info">
+          <img class="contact-img" src="../images_content/header-call.png">
+          <p><b>CALL</b><br><span style="font-size: 10px; color: grey">+48 882 515 514</span></p>
+        </div> 
+        <div class="contact-info">
+          <img class="contact-img" src="../images_content/header-email.png">
+          <p><b>EMAIL</b><br><span style="font-size: 10px; color: grey">INFO@DROPTICA.COM</span></p>
+      </div>
+      <div class="social-img">
+        <img src="../images_content/twitter.png">
+        <img src="../images_content/linkedin.png">
+      </div>
+    </div>
+    <div class="mobile-header">
+      <img id='mobile-logo' src="../images_content/logo_small.png">
+      <img class='contact-img' src="../images_content/header-email.png">
+      <img class='contact-img'  src="../images_content/header-call.png">
+    </div>
+    </section>
+    
+    <section class="navbar">
+      <ul class="navbar-elements">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">OUR SOLUTIONS</a></li>
+        <li><a href="#">CASE STUDIES</a></li>
+        <li class="dropdown">
+          <button class="dropbtn">ABOUT </button>
+          <div class="dropdown-content">
+            <a href="#">OUR COMPANY</a>
+            <a href="#">OUR EXPERTISE</a>
+            <a href="#">NEWSLETTER<br>SIGN-UP</a>
+        </li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li> 
+          <input id="search-button" type="image" src="../images_content/search_icon.png" name="saveForm" class="btTxt submit" id="saveForm" />
+        </li>
+      </ul>
 
+      <ul class="mobile-navbar">
+        <li><img src="../images_content/twitter.png"></li>
+        <li><img src="../images_content/linkedin.png"></li>
+        <li> 
+          <input id="mobile-search-button" type="image" src="../images_content/search_icon.png" name="saveForm" class="btTxt submit" id="saveForm" />
+        <li class="hamburger-dropdown">
+          <button id='ham-button' for="hamburger">&#9776;</button>
+        </li>
+      </ul>
+    </section>
+      <div class="mobile-dropdown">
+        <p><a href="#">HOME</a></p>
+        <p><a href="#">OUR SOLUTIONS</a></p>
+        <p><a href="#">CASE STUDIES</a></p>
+        <p><a href="#">ABOUT <button id="about-button" style="all: unset">+</button></a></p>
+        <div class="about-section">
+          <p><a href="#">OUR COMPANY</a></p>
+          <p><a href="#">OUR EXPERTISE</a></p>
+          <p><a href="#">NEWSLETTER SIGN-UP</a></p>
+        </div>
+        <p><a href="#">NEWS</a></p>
+        <p><a href="#">CONTACT</a></p>
+      </div>
+      <div id="search-bar">
+        <form>
+          <input id="search-input" type="text" placeholder="SEARCH" checked>
+          <input id="input-image" type="image" src="../images_content/search_icon.png" name="saveForm" class="btTxt submit" id="saveForm" />
+        </form>
+      </div>
+    
+    <section class="main-section">
+      <div class="info-box">
+      <h2>DUNLAVIN CHURCH RESTORATION</h2>
+      <div class="box">
+        <p id="information">Sed feugiat imperdiet porttitor.
+          Nulla lectus turpis, placerat ut sapien eu,
+          pellentesque volutpat tellus. 
+          Nullam vel justo eu enim feugiat venenatis tristique vitae ligula. 
+          Aliquam semper interdum luctus. 
+          </p>
+      </div>
+    </div>
+    <div class="mobile-navigation">
+      <input type="image" src="../images_content/white-arrow.png" class="previous-button" id="previous"></input>
+      <button id="findout-button">FIND OUT MORE</button>
+      <input type="image" src="../images_content/white-arrow.png" class="next-button" id="next"></input>
+    </div>
+    </section>
+    
+    <section class="help-section">
+      <h3>HOW CAN WE HELP YOU</h3>
+      <div class="work-images">
+        <div class="work-box">
+          <img class="work-image" src="../images_content/icon_builder_0.png">
+          <p>I'M A SPECIFIER</p>
+          <img class="work-arrow" src='../images_content/arrow_builder_0.png'>
+        </div>
+        <div class="work-box">
+          <img class="work-image" src="../images_content/icon_manufacturer_0.png">
+          <p>I'M A BUILDER </p>
+          <img class="work-arrow" src='../images_content/arrow_manufacturer_0.png'>
+        </div>
+        <div class="work-box">
+          <img class="work-image" src="../images_content/icon_specifier_0.png">
+          <p>I'M A PRECAST<br>MANUFACTURER </p>
+          <img class="work-arrow" style="position: relative; left: 55px; bottom: 30px" src='../images_content/arrow_specifier_0.png'>
+        </div>
+      </div>
+    </section>
 
-
+  <script src="js/scripts.js"></script>
   </body>
 </html>
