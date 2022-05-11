@@ -17,6 +17,12 @@ h3 {
     font-weight: 400;
 }
 
+input[type='text'] {
+    color: white;
+    font-size: 14px; 
+    font-family: 'Montserrat', sans-serif; 
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500
@@ -123,7 +129,10 @@ li a {
     display: none;
     background-color: #cc6601;
     height: 43px;
-    position: relative
+    padding-right: 350px;
+    position: relative;
+    justify-content: center;
+    align-items: center
 }
 
 
@@ -137,11 +146,8 @@ li a {
     background-color: #cc6601;
     border: none;
     height: 20px;
-    width: 500px;
-    position: absolute;
-    left: 22%;
-    bottom: 10px;
-    outline: none
+    width: 400px;
+    outline: none  
 }
 
 ::placeholder {
@@ -265,6 +271,7 @@ li a {
     cursor: pointer;
   }
 
+
 /* ----------------------HELP SECTION--------------------------------------*/
 
 .help-section h3 {
@@ -353,8 +360,10 @@ li a {
         bottom: 3px;
     }
 
-    #search-input {
-        left: 3%
+    #search-bar {
+        justify-content: flex-start;
+        padding-left: 20px;
+        padding-right: 0
     }
 
   }
@@ -522,8 +531,11 @@ li a {
     }
 
     #search-button {
-        position: static
+        position: static;
     }
 
+    #search-input {
+        width: 100%
+    }
 
 }
